@@ -60,8 +60,8 @@ public class Secuenciales {
         //System.out.println("Ingresa tu peso");
         //float peso = scanner.nextFloat();
         //System.out.println("Cuanto tiempo vas a hacer ejercicio? en minutos");
-        //int tiempo = scanner.nextInt();
-        //System.out.println("Elije el tipo de ejercicio para realizar \n 1:Correr \n 2:Nadar \n 3:Andar en bicileta");
+        //double tiempo = scanner.nextDouble();
+        //System.out.println("Elije el tipo de ejercicio para realizar \n 1:Correr \n 2:Nadar \n 3:Andar en bicicleta");
         //int tipo = scanner.nextInt();
         //switch (tipo){
         //    case 1:
@@ -72,6 +72,7 @@ public class Secuenciales {
         //        break;
         //    case 3:
         //        System.out.println("Las calorias quemadas por andar en bicicleta son "+tiempo*2.5);
+                   //break;
         //     default:
         //        System.out.println("Entrenamiento no válido. Por favor, selecciona 1, 2 o 3.");
 
@@ -197,14 +198,16 @@ public class Secuenciales {
 
         System.out.println("Ingresa tu indice de felicidad en la escala del 1-10");
         int felicidad = scanner.nextInt();
-        if (felicidad > 1 && felicidad < 3 ) {
+        if (felicidad >= 1 && felicidad <= 3 ) {
             System.out.println("El nivel de felicidad es bajo");
-        } else if (felicidad > 3 && felicidad < 6) {
+        } else if (felicidad > 3 && felicidad <= 6) {
             System.out.println("El nivel de felicidad es medio");
-        } else if (felicidad > 6 && felicidad < 9) {
+        } else if (felicidad > 6 && felicidad <= 9) {
             System.out.println("El nivel de felicidad es alto");
         } else if (felicidad==10) {
             System.out.println("El nivel de felicidad es el maximo");
+        }else {
+            System.out.println("Los datos son incorrectos");
         }
 
     }
