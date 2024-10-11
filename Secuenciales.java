@@ -208,8 +208,8 @@ public class Secuenciales {
             System.out.println("El nivel de felicidad es el maximo");
         }else {
             System.out.println("Los datos son incorrectos");
-        }
 
+        }
     }
     }
 
